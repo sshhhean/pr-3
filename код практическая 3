@@ -1,0 +1,14 @@
+def can_break_chocolate(n, m, k):
+    if k <= 0 or k > n * m:
+        return "Нет"
+    
+    if k % n == 0 or k % m == 0:
+        return "Да"
+    else:
+        return "Нет"
+n = int(input("Введите количество строк (n): "))
+m = int(input("Введите количество столбцов (m): "))
+k = int(input("Введите количество долек (k): "))
+
+result = can_break_chocolate(n, m, k)
+print(result)
